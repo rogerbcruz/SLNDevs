@@ -1,0 +1,81 @@
+<link href="css\bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js\bootstrap.min.js"></script>
+
+
+<form class="form-horizontal">
+<fieldset>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+           <div class="card">
+             <div class="card-header">
+                <legend>Cadastro de Produtos</legend>
+             </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtcodigo_produto_id">Cód. Produto : </label>  
+            <div class="col-md-2">
+            <input id="txtcodigo_produto_id" name="txtcodigo_produto_id" type="text" placeholder="" class="form-control input-md">
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtproduto">Produto : </label>  
+            <div class="col-md-6">
+            <input id="txtproduto" name="txtproduto" type="text" placeholder="Descrição do Produto" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtgrupo">Grupo : </label>
+            <div class="col-md-4">
+              <select id="txtgrupo" name="txtgrupo" class="form-control">
+                <option value="1">Sorvete</option>
+                <option value="2">Açai</option>
+                <option value="3">Picolé</option>
+                <option value="4">Casquinha</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Unidade : </label>
+            <div class="col-md-4">
+              <select id="txtcodigo_unidade_id" name="txtcodigo_unidade_id" class="form-control">
+                <option value="UND">Unidade</option>
+                <option value="CX">Caixa</option>
+                <option value="PC">Pacote</option>
+                <option value="FAR">Fardo</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtestoque_minimo">Estoque Mínimo : </label>  
+            <div class="col-md-2">
+            <input id="txtestoque_minimo" name="txtestoque_minimo" type="text" placeholder="" class="form-control input-md" required="">
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="txtestoque_atual">Estoque Atual : </label>  
+            <div class="col-md-2">
+            <input id="txtestoque_atual" name="txtestoque_atual" type="text" placeholder="" class="form-control input-md">
+              
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="btnsalvar"></label>
+            <div class="col-md-8">
+              <button id="btnsalvar" name="btnsalvar" class="btn btn-primary">Salvar</button>
+              <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
+        </div>

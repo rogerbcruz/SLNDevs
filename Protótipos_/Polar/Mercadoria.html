@@ -1,0 +1,66 @@
+<link href="css\bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js\bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="mobile-web-app-capable" content="yes">
+
+      <title>Mercadoria</title>
+   </head>
+   <body>
+      <div class="container mt-3">
+         <div class="row">
+            <div class="col">
+               <div class="card">
+                 <div class="card-header">
+                   Lançamento de Produtos
+                 </div>
+                 <div class="card-block">
+                     <form class="form-inline">
+                         <select class="form-control" id="nmProduto" style="max-width: 300px;">
+                           <option value="">Selecione o Produto</option>
+                           <option>SORVETE DE CHOCOLATE</option>
+                           <option>SORVETE DE FLOCOS</option>
+                           <option>SORVETE DE CREME</option>
+                         </select>
+
+                         <label class="sr-only" for="inlineFormInput">Quantidade</label>
+                         <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 ml-sm-2" id="qtProduto" placeholder="Quant" style="width:70px">
+                         
+                         <button type="submit" class="btn btn-primary" id="btnAdicionarProduto">+</button>
+                         <p class="text-danger ml-3 pt-2 invisible" id="msgValidaForm">Favor preencher <strong>todos os campos</strong> do produto!</p>
+                     </form>
+                     <table class="table table-sm table-striped mt-3 table-produtos">
+                       <thead>
+                         <tr>
+                           <th style="max-width: 600px;">Produto</th>
+                           <th>Quantidade</th>
+                           <th class="text-right pr-5">Valor (R$)</th>
+                           <th class="text-right pr-5 vlTotalProduto">Total</th>
+                           <th>Ação</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                       </tbody>
+                       <tfoot class="invisible">
+                         <tr>
+                           <th></th>
+                           <th></th>
+                           <th class="text-right">SubTotal ❯</th>
+                           <th class="text-right pr-5" id="vlTotalPedido"></th>
+                           <th></th>
+                         </tr>
+                       </tfoot>
+                     </table>
+                 </div>
+               </div>
+            </div>
+         </div>   
+      </div>
+      
+   </body>
+</html>
